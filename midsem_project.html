@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzimCarMart - Find Your Dream Car</title>
+    <style>
+        body {
+            background-color: black;
+            color: #dd9a0b;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.0;
+        }
+        header {
+            background-color: rgb(3, 1, 1);
+            color:orange;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: orange;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            
+        
+            margin: 0 1rem;
+            text-decoration:black;
+            color: #333;
+        }
+        .section {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .search-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .search-form input, .search-form select, .search-form button {
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+        }
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .car-item {
+            border: 1px solid #dd9a0b;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: whitesmoke;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .dealer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .dealer-item {
+            border: 1px solid orange;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body >
+    <p> <a name="Blog"></a>
+
+    </p>
+    <header>
+        <h1>AzimCarMart</h1>
+        <p>Your One-Stop Shop for New and Used Cars</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="BLOG.HTML">BLOG</a>
+        <a href="CONTACT.HTML">CONTACT</a>
+        <a href="LOGIN.HTML">LOGIN/SIGNUP</a>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h2>Search Cars</h2>
+            <form class="search-form">
+                <input type="text" placeholder="Make">
+                <input type="text" placeholder="Model">
+                <select>
+                    <option value="">Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+                <input type="number" placeholder="Min Price">
+                <input type="number" placeholder="Max Price">
+                <input type="text" placeholder="Location">
+                <select>
+                    <option value="">Body Type</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Truck</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+
+            <h2>Featured Cars</h2>
+            <div class="car-grid">
+                <div class="car-item">
+                    <img src="GLE 63.jpg" alt="Car 1" width="200">
+                    <h3>GLE 63</h3>
+                    <p>Price: $25,000</p>
+                    <p>Mileage: 10,000 miles</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="car-item">
+                    <img src="c63.jpg" alt="Car 2" width="200">
+                    <h3>Mecedes benz c63</h3>
+                    <p>Price: $30,000</p>
+                    <p>Mileage: 25,000 miles</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="car-item">
+                    <img src="demon challenger.jpg" alt="Car 3" width="200">
+                    <h3>demon challenger</h3>
+                    <p>Price: $20,000</p>
+                    <p>Mileage: 40,000 miles</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="car-item">
+                    <img src="Keo.jpg" alt="Car 4" width="200">
+                    <h3>Keonigsegg</h3>
+                    <p>Price: $45,000</p>
+                    <p>Mileage: 5,000 miles</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+            <h2>Featured Dealers</h2>
+            <div class="dealer-grid">
+                <div class="dealer-item">
+                    <h3>Abass</h3>
+                    <p>Location:Kumasi</p>
+                    <p>Rating: 4.5/5</p>
+                    <a href="#">View Dealer Profile</a>
+                </div>
+                <div class="dealer-item">
+                    <h3>Alhassan</h3>
+                    <p>Location: Kintampo</p>
+                    <p>Rating: 4.8/5</p>
+                    <a href="#">View Dealer Profile</a>
+                </div>
+                <div class="dealer-item">
+                    <h3>Mumin</h3>
+                    <p>Location: ivory coast</p>
+                    <p>Rating: 4.2/5</p>
+                    <a href="#">View Dealer Profile</a>
+                </div>
+            </div>
+
+            <h2>About AzimCarMart</h2>
+            <p>AzimCarMart is dedicated to providing a seamless car buying experience. We offer a wide selection of new and used cars from trusted dealers and private sellers. Our platform is designed to make it easy for you to find the perfect car at the right price. We also offer financing options and a comprehensive blog with car-related news and tips.</p>
+
+            <section id="blog">
+                <h2>blog</h2>
+            </section>
+            <ul>
+                <li><a href="#">Top 10 Tips for Buying a Used Car</a></li>
+                <li><a href="#">The Benefits of Electric Vehicles</a></li>
+                <li><a href="#">How to Finance Your Dream Car</a></li>
+            </ul>
+
+            <h2>Customer Testimonials</h2>
+            <blockquote>
+                <p>"AzimCarMart made buying my first car a breeze! The search filters were easy to use, and I found the perfect car within my budget." - Emmanuel </p>
+            </blockquote>
+            <blockquote>
+                <p>"I was impressed with the wide selection of cars and the helpful dealer profiles. Highly recommend!" - kwame</p>
+            </blockquote>
+        </div>
+        
+        <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch?</h2>
+        <p>Contact us to learn more about our products or to place an order.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button>Send</button>
+        </form>
+    </section>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AzimCarMart. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
